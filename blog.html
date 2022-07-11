@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assests/images/atabulat.png" type="image/x-icon">
+    <link rel="stylesheet" href="assests/css/style.css">
+
+    <title>Blog</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="left">
+                <a href="index.html">
+                    <img src="assests/images/atabulat.png" alt="">
+                </a>
+                <ul>
+                    <li>
+                        <a href="index.html" class="home">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">My Project</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section-form-blog">
+            <div class="form-blog">
+                <form onsubmit="addBlog(event)">
+                    <h1>ADD MY PROJECT</h1>
+                    <div>
+                        <label for="input-project-name">Project Name</label>
+                        <input type="text" id="input-project-name" class="project-name" required>
+                    </div>
+                    <div class="date-project">
+                        <div class="left-date">
+                            <label for="input-start-date">Start Date</label>
+                            <input type="date" id="input-start-date" required>
+                        </div>
+                        <div class="right-date">
+                            <label for="input-end-date">End Date</label>
+                            <input type="date" id="input-end-date" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="input-description-blog">Description</label>
+                        <textarea name="input-description-blog" id="input-description-blog" cols="30" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <label>Technologies</label>
+                        <div class="techno-project">
+                            <div class="left-techno">
+                                <div>
+                                    <input type="checkbox" name="node-js" id="node-js" value="assests/images/node.svg" class="technologies">
+                                    <label for="node-js">Node JS</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="react-js" id="react-js" value="assests/images/react.svg" class="technologies">
+                                    <label for="react-js">React JS</label>    
+                                </div>
+                            </div>
+                            <div class="right-techno">
+                                <div>
+                                    <input type="checkbox" name="next-js" id="next-js" value="assests/images/next-js.svg" class="technologies">
+                                    <label for="next-js">Next JS</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="typeScript" id="typeScript" value="assests/images/typescript.svg" class="technologies">
+                                    <label for="typScript">TypeScript</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="input-file-img">Upload Image</label>
+                        <input type="file" name="input-file-img" id="input-file-img">
+                    </div>
+                    <button type="submit">Post Blog</button>
+                </form>
+            </div>
+        </section>
+        <section id="section-project">
+            <h1>My Project</h1>
+            <div id="myProject">
+                <div class="cardMyProject">
+                    <div>
+                        <img src="assests/images/atapersegipanjang.png" alt="">
+                    </div>
+                    <div>
+                        <h3>App Name</h3>
+                        <p>Duration</p>
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, blanditiis. Illo, ducimus? Quidem, commodi saepe et culpa, aspernatur perferendis animi nulla iure molestiae autem necessitatibus voluptatem itaque quo, nemo ad!</p>
+                    </div>
+                    <div class="icon-lang">
+                        <img src="assests/images/node.svg" alt="">
+                        <img src="assests/images/react.svg" alt="">
+                        <img src="assests/images/next-js.svg" alt="">
+                        <img src="assests/images/typescript.svg" alt="">
+                    </div>
+                    <div>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        
+<script src="assests/js/blog.js"></script>
+</body>
+</html>

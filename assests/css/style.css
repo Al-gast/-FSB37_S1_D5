@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+body{
+    font-family: 'Quicksand', sans-serif; 
+    background-color: #E3E7EB;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar style */
+nav{
+    display: flex;
+    background-color: #171717;
+    height: 8vh;
+    padding: 0.4rem;
+}
+nav div{
+    display: flex;
+    align-items: center;
+}
+nav .left{
+    flex: 50%;
+    padding-left: 10ch;
+}
+nav .left img{
+    width: 35px;
+    cursor: pointer;
+    margin-right: 3ch;
+}
+nav .left ul{
+    list-style: none;
+}
+nav .left ul li{
+    display: inline;
+}
+nav .left ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+}
+nav .left ul li a.home{
+   font-weight: 800;
+}
+nav .right{
+    flex: 50%;
+    justify-content: flex-end;
+    padding-right: 10ch;
+}
+nav .right a{
+    text-decoration: none;
+    background-color: #079211;
+    padding: 0.4em 1em;
+    color: white;
+    border-radius: 3px;
+}
+
+section#section-profile, section#section-form-blog, section#section-form-contact{
+    overflow: auto;
+    padding: 20px;
+    background-color: #201F1F;
+}
+
+.container{
+    width: 80%;
+    margin: 1rem auto;
+    padding: 2.5rem 5rem;
+    border-radius: 3px;
+    background-color: #323232;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .bio{
+    flex: 70%;
+}
+.container .bio .link{
+    display: flex;
+    margin: 2.5rem 0 0 0;
+    align-items: center;
+}
+.container .bio .link a.contact{
+    background-color: #079211; 
+    color: whitesmoke; 
+    border-radius: 3px; 
+    margin: 0; 
+    padding: 5px 30px; 
+}
+.container .bio .link a{
+    text-decoration: none; 
+    margin-left: 1rem; 
+    color: white;
+}
+.container .bio .link i{
+    width: 1rem;
+    margin-left: 0.5rem;
+    color: white;
+}
+.container .bio h1{
+    color: white;
+}
+.container .bio p{
+    text-align: justify;
+    margin-top: 35px;
+    width: 90%;
+    color: white;
+}
+
+.container .div-sosmed{
+    margin: 3rem 0 0 0;
+}
+.container .div-sosmed a{
+    text-decoration: none; 
+    margin: 0 20px 0 0;
+    color:white;
+}
+.container .div-sosmed a i{
+    font-size: 28px;
+}
+
+.container .profile{
+    flex: 30%;
+    border-radius: 5px;
+    background-color: #201F1F;
+}
+.container .profile img{
+    width: 100%; 
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px;
+}
+.container .profile div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 0;
+}
+.container .profile div p{
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+.container .profile div h3{
+    font-size: 0.8rem;
+    margin: 5px 0 0 0; 
+    text-align: center;
+    color: white;
+    font-weight: 400; 
+}
+
+
+div.contact-form{
+    width: 50vw;
+    background-color: #eee;
+    border-radius: 1ch;
+    padding: 1.5ch 3ch;
+    margin: 1rem auto;
+}
+div.contact-form form{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+div.contact-form h1{
+    text-align: center;
+    color: #171717;
+    margin: 1ch 0;
+    font-size: 24px;
+}
+div.contact-form input[type=text], input[type=email], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 5px; 
+    margin-bottom: 14px;
+    resize: vertical ; 
+}
+div.contact-form form button{
+    display: grid;
+    background-color: #171717;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+}
+
+div.form-blog{
+    width: 50vw;
+    background-color: #eee;
+    border-radius: 1ch;
+    padding: 1.5ch 3ch;
+    margin: 1rem auto;
+}
+div.form-blog h1{
+    text-align: center;
+    color: #171717;
+    margin: 1ch 0;
+}
+div.form-blog input[type=text], input[type=date], input[type=file], textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 5px; 
+    margin-bottom: 14px;
+    resize: none;
+}
+div.form-blog div.date-project{
+    display: flex;
+    justify-content: center;
+}
+div.form-blog div.date-project div.left-date{
+    margin: 0 0.5ch 0 0;
+    width: 100%;
+}
+div.form-blog div.date-project div.right-date{
+    margin: 0 0 0 0.5ch;
+    width: 100%;
+}
+div.form-blog div.techno-project{
+    display: flex;
+    width: 100%;
+}
+div.form-blog div.techno-project div.left-techno{
+    margin: 5px 14px 1ch 0;
+}
+div.form-blog div.techno-project div.right-techno{
+    margin: 5px 14px 1ch 5ch;
+}
+div.form-blog form button{
+    display: grid;
+    background-color: #171717;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+}
+
+section#section-project{
+    background-color: #323232;
+    overflow: auto;
+    padding: 20px;
+}
+section#section-project div#myProject{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+section#section-project h1{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+section#section-project div#myProject div{
+    margin: 1.8ch 0 0 0;
+}
+section#section-project div#myProject div img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: 250px;
+}
+section#section-project div#myProject div.cardMyProject{
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    background-color: #eee;
+    border-radius: 0.5ch;
+    padding: 0 1.5ch 1.5ch 1.5ch;
+    margin: 1rem ;
+}
+section#section-project div#myProject div.icon-lang{
+    display: flex;
+    margin: 3ch 0 1ch 0;
+}
+section#section-project div#myProject div.icon-lang img{
+    width: 2rem;
+    margin-right: 1rem;
+}
+section#section-project div#myProject div button{
+    background-color: #171717;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+section#section-detail-project{
+    background-color: #323232;
+    overflow: auto;
+    padding: 20px;
+}
+section#section-detail-project h1{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+section#section-detail-project div.profile-blog-detail{
+    display: flex;
+    margin: 2rem;
+}
+div.profile-blog-detail div.profile-left-detail{
+    flex: 60%;
+}
+div.profile-blog-detail div.profile-right-detail{
+    flex: 40%;
+    padding: 2rem;
+}
+div.profile-blog-detail div.profile-left-detail img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: 400px;
+}
+div.duration-detail{
+    color: white;
+}
+div.duration-detail div{
+    display: flex;
+    margin: 1rem 0;
+}
+div.duration-detail div img{
+    width: 1.5rem;
+    margin-right: 1rem;
+}
+div.techno-lang-detail{
+    display: flex;
+    margin: 3ch 0 1ch 0;
+    flex-direction: column;
+}
+div.techno-lang-detail h2{
+    color: white;
+}
+div.techno-lang-detail img{
+    width: 2rem;
+}
+div.icon-lang-detail{
+    display: flex;
+    margin: 1.5rem 1.5rem 1.5rem 0;
+    align-items: center;
+}
+div.icon-lang-detail img{
+    margin-right: 0.6rem;
+}
+div.icon-lang-detail p{
+    color: white;
+}
+div.description-detail-blog{
+    margin: 0 2rem 2rem 2rem;
+}
+div.description-detail-blog p{
+    text-align: justify;
+    margin-top: 1rem;
+    color: white;
+}
+div.icon-detail-blog{
+    display: flex;
+}
